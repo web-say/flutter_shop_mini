@@ -22,8 +22,8 @@ class ProductCard extends StatelessWidget {
       onTap: press,
       child: Container(
         width: 154,
-        padding: EdgeInsets.all(defaultPadding / 2),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.all(defaultPadding / 2),
+        decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.all(
             Radius.circular(defaultBorderRadius),
@@ -35,7 +35,7 @@ class ProductCard extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 color: bgColor,
-                borderRadius: BorderRadius.all(
+                borderRadius: const BorderRadius.all(
                   Radius.circular(defaultBorderRadius),
                 ),
               ),
@@ -44,7 +44,7 @@ class ProductCard extends StatelessWidget {
                 height: 132,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: defaultPadding,
             ),
             Row(
@@ -53,13 +53,13 @@ class ProductCard extends StatelessWidget {
                 Expanded(
                   child: Text(
                     title,
-                    style: TextStyle(color: Colors.black),
+                    style: const TextStyle(color: Colors.black),
                   ),
                 ),
-                SizedBox(width: defaultPadding / 4),
+                const SizedBox(width: defaultPadding / 4),
                 Text(
                   "\$" + price.toString(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 20,
                   ),

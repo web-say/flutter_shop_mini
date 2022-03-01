@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shop_mini/constants.dart';
-import 'package:flutter_shop_mini/models/Category.dart';
-import 'package:flutter_shop_mini/models/Product.dart';
 import 'package:flutter_shop_mini/screens/home/components/categories.dart';
 import 'package:flutter_shop_mini/screens/home/components/new_arrival.dart';
 import 'package:flutter_shop_mini/screens/home/components/popular.dart';
-import 'package:flutter_shop_mini/screens/home/components/product_card.dart';
 import 'package:flutter_shop_mini/screens/home/components/search_form.dart';
-import 'package:flutter_shop_mini/screens/home/components/section_title.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -54,7 +50,7 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: const [
             Text(
               "Explore",
               style: TextStyle(

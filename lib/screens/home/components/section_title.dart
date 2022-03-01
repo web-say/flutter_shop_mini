@@ -17,12 +17,12 @@ class SectionTitle extends StatelessWidget {
       children: [
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 20, color: Colors.black, fontWeight: FontWeight.w600),
         ),
         TextButton(
           onPressed: () {},
-          child: Text(
+          child: const Text(
             "See All",
             style: TextStyle(color: Colors.black54),
           ),

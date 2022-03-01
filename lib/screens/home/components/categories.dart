@@ -60,7 +60,7 @@ class CategoryCard extends StatelessWidget {
                 icon,
                 width: 62,
               ),
-              SizedBox(
+              const SizedBox(
                 height: defaultPadding / 2,
               ),
               Text(

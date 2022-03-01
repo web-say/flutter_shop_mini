@@ -18,6 +18,7 @@ class Popular extends StatelessWidget {
           pressSeeAll: () {},
         ),
         SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: List.generate(

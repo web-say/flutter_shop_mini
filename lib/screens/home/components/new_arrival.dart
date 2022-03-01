@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shop_mini/constants.dart';
 import 'package:flutter_shop_mini/models/Product.dart';
+import 'package:flutter_shop_mini/screens/details/details_screen.dart';
 import 'package:flutter_shop_mini/screens/home/components/product_card.dart';
 import 'package:flutter_shop_mini/screens/home/components/section_title.dart';
 
@@ -18,6 +19,7 @@ class NewArrival extends StatelessWidget {
           pressSeeAll: () {},
         ),
         SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: List.generate(
@@ -29,7 +31,16 @@ class NewArrival extends StatelessWidget {
                   title: demo_product[index].title,
                   price: demo_product[index].price,
                   bgColor: demo_product[index].bgColor,
-                  press: () {},
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DetailsScreen(
+                          product: demo_product[index],
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
